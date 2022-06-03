@@ -35,4 +35,4 @@ const reset = () => {
 }
 
 
-document.addEventListener('keydown', pulo, reset)
+document.addEventListener('keydown', 'onclick', pulo, reset)
