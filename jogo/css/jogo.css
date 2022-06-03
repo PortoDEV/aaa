@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-board{
+    width: 80%;
+    height: 500px;
+    border: 1px solid rgb(255, 0, 0);
+    margin: 0 auto;
+    position: relative;
+    bottom: -100px;
+    overflow: hidden;
+    background-color: rgb(145, 199, 253);
+    background-image: var();
+}
+.cano{
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    /* left: 100px; */
+    animation: cano-animation 1.5s infinite linear;
+}
+@keyframes cano-animation{
+    from{
+        right: -70px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.player{
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    
+}
+.pulo{
+   animation: pulo 500ms ease-out; 
+}
+@keyframes pulo{
+
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 120px;
+    }
+    50%{
+        bottom: 120px;
+    }
+    60%{
+        bottom: 120px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+.fundo{
+    position: absolute;
+    bottom: 350px;
+    width: 300px;
+   animation: fundo-animation 10s infinite linear; 
+}
+ @keyframes fundo-animation{
+    from{
+        left: -350px;
+    }
+    to{
+        left: 100%;
+    } 
+} 
+
+
+.morreu{
+    display: none;
+}
